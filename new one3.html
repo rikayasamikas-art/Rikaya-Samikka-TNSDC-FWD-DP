@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Flexbox layout for profile + form */
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Profile box */
+    .profile {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Form box */
+    .form-box {
+      flex: 2;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .form-box label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    .form-box input, .form-box textarea, .form-box select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .form-box button {
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .form-box button:hover {
+      background: #0066cc;
+    }
+
+    /* Table styling */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    table, th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #004080;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Admission Portal</h1>
+  </header>
+
+  <!-- Flexbox: Profile + Form -->
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <h2>Student Profile</h2>
+      <img src="https://via.placeholder.com/120" alt="Student Image">
+      <p><strong>Name:</strong> Rikaya samikka</p>
+      <p><strong>Course:</strong> B.Sc Computer Science</p>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-box">
+      <h2>Admission Form</h2>
+      <form>
+        <label>Full Name:</label>
+        <input type="text" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" required>
+
+        <label>Email ID:</label>
+        <input type="email" required>
+
+        <label>Father's Name:</label>
+        <input type="text">
+
+        <label>Mother's Name:</label>
+        <input type="text">
+
+        <label>Address:</label>
+        <textarea rows="3"></textarea>
+
+        <label>Course Applied:</label>
+        <select>
+          <option>B.Sc Computer Science</option>
+          <option>B.Com</option>
+          <option>B.A English</option>
+          <option>B.Tech IT</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Table Section -->
+  <div style="padding:20px;">
+    <h2>Course Fee Structure</h2>
+    <table>
+      <tr>
+        <th rowspan="2">Course</th>
+        <th colspan="2">Fee Details</th>
+        <th rowspan="2">Image</th>
+      </tr>
+      <tr>
+        <th>Tuition Fee</th>
+        <th>Lab Fee</th>
+      </tr>
+      <tr>
+        <td>B.Sc CS</td>
+        <td>₹20,000</td>
+        <td>₹5,000</td>
+        <td><img src="https://via.placeholder.com/80" alt="CS"></td>
+      </tr>
+      <tr>
+        <td>B.Com</td>
+        <td>₹15,000</td>
+        <td>—</td>
+        <td><img src="https://via.placeholder.com/80" alt="Commerce"></td>
+      </tr>
+      <tr>
+        <td>B.Tech IT</td>
+        <td>₹40,000</td>
+        <td>₹10,000</td>
+        <td><img src="https://via.placeholder.com/80" alt="IT"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
