@@ -1,1 +1,0 @@
-# Rikaya-Samikka-TNSDC-FWD-DP
